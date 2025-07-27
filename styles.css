@@ -1,74 +1,84 @@
 body{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    background-color: aquamarine;
-}
-.addTaskContainer{
-    display: flex;
-    height: 60vh;
-    flex-direction: column;
-    gap: 10px;
-    font-size: xx-large;
-    width: 100vw;
-    align-items: center;
-    background-color: rgb(151, 221, 218);
-    margin-bottom: 0px;
-
-}
-.addTaskContainer div{
-    background-color: gray;
-    border-radius: 20px;
-    height: 40vh;
-    width: 40vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 29px;
- margin: 0;
-}
-#addTask{
-    padding: 6px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 7px;
-    font-size: 16px;
-    border: 0;
-}
-input{
-    border: 0;
-    padding: 10px;
-    height: 30px;
-    font-size: 20px;
-    border-radius: 10px;
-    background-color: rgb(194, 245, 245);
-}
-p{
-    margin-bottom: 5px;
-}
-.taskListContainer{
-    background-color: #256903;
     padding: 0%;
-    margin: 0;
-    min-height: 40vh;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    border-radius: 15px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+.done{
+    text-decoration: line-through;
+    color: rgb(61, 59, 59);
+}
+h1{
+    color: white;
+    margin-top: 0;
+    text-align: center;
     
 }
-ol{
-    color: white;
-    font-size: larger;
-    line-height: 35px;
-   
+#addTask{
+    padding-top:35px;
 }
-li button{
-    border: 0;
-    margin-left: 10px;
+.taskContainer{
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    align-items:baseline;
+    flex-direction: column;
+    padding: 50px;
+    gap: 35px;
+    background-color: rgb(231, 172, 124);
+    border-radius: 25px;
+}
+main{
+    background-color: rgb(224, 99, 26);
+    min-height: 100vh;
+    min-width: 100px;
+}
+input{
+    min-height: 52px;
     border-radius: 5px;
+    border: 0.5px solid;
     font-size: large;
+    min-width: 500px;
+
+}
+#add{
+    font-size: large;
+ padding: 7px 22px;
+ border-radius: 12px;
+ border: 0.3px solid orange;
+ 
+}
+#taskList{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: large;
+
+}
+table{
+    min-width: 800px;
+}
+
+#taskList table td{
+    /* border: 0.5px solid; */
+    padding: 8px 11px;
+}
+.deletion{
+    border: 0.3px solid orange;
+    background-color: red;
+    border-radius: 5px;
+    
+    font-size: large;
+    padding: 5px 8px;
+}
+.completed{
+    border: 0.3px solid orange;
+    background-color: green;
+    font-size: large;
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin-right: 15px;
 }
